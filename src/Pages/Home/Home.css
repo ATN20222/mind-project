@@ -1,0 +1,128 @@
+.SolutionSection{
+    padding: 10px;
+    background-color: #FAF4F4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.SolutionSectionImageCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.SolutionSectionImageCol img{
+    max-width: 350px;
+}
+.SolutionSectionTextCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.SolutionSectionTextCol h1,
+.SolutionSectionTextCol span{
+    padding: 10px;
+}
+.SolutionHeader{
+    background: linear-gradient(279.62deg, #ED1C24 4.5%, #E21B23 20.28%, #87101E 97.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700 !important;
+}
+.SolutionSectionTextCol span{
+    text-align: start;
+    font-weight:400;
+}
+
+.AboutSection{
+    padding: 10px;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.TeamDescription{
+    font-size:32px;
+    font-weight: 400;
+}
+.TeamCard{
+    /* background: linear-gradient(180deg, #ED1C24 4.5%, #E21B23 20.28%, #87101E 97.32%); */
+    background: #E31B22;
+    
+
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius:50%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    min-height: 220px;
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 100px, 100px, 38px, 38px;
+}
+.TeamCard .Circle{
+    max-width: 140px;
+    max-height: 140px;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden ;
+    box-shadow: rgba(0, 0, 0, 0.35) 6px 5px 0px;
+    position: relative;
+
+}
+.TeamCard .Circle image{
+    object-fit: cover;
+}
+.TeamName{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.TeamRole{
+    font-weight: 200;
+    font-size: 18px;
+}
+.TeamSection{
+    padding: 10px;
+    background-color: #FAF4F4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ClientsSection{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ClientCardContainer{
+    width: 150px;
+    padding: 20px;
+}
+.ClientCard{
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DFC8C8;
+    border-radius:30px;
+    
+}
+.ClientCard img{
+    height: 58px;
+    object-fit: contain !important;
+}
+.ClientCardsSliderMain{
+    width: 99.5% !important;
+}
+.ClientCardsSlider{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

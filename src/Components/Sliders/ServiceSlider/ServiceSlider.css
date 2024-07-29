@@ -1,0 +1,41 @@
+.SerciceCardContainer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ServicesSlider{
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+.CustomPrevBtn{
+    position: absolute;
+    left: 5px;
+    padding: 5px;
+    background-color: transparent;
+    top: 40%;
+    left: 0px;
+    padding-bottom: 0;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    
+  }
+  .CustomNextBtn{
+    position: absolute;
+    padding: 5px;
+    overflow: hidden;
+    padding-bottom: 0;
+    top: 3px;
+    right: 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    right: 0px;
+    top: 40%;
+
+
+    
+  }

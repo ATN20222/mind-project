@@ -1,0 +1,64 @@
+.ServicesSection{
+    position: relative;
+    background-color: white;
+    min-height: 500px;
+}
+.ServicesHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ServicesHeader h1{
+    background: linear-gradient(#AE141B, #ED1C24) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ServicesDescription{
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+}
+.ServicesCard{
+    background-color: var(--color-grey);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 20px;
+    max-width: 215px;
+}
+ .ServicesCardHr{
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.668);
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ServiceCardShowMore{
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right:30px;
+}
+.IconContainer .Circle{
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    
+}
+.ServiceDescription{
+    text-align: start;
+    line-height: 20px;
+}
+.HeaderServiceCard{
+    background: linear-gradient(279.62deg, #ED1C24 4.5%, #E21B23 20.28%, #87101E 97.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700 !important;
+}
+.ReadMoreServiceContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
