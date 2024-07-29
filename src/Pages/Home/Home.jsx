@@ -15,7 +15,7 @@ const Home = ()=>{
             <ServicesSection/>
             <SolutionSection/>
             <AboutUsSection/>
-            {/* <TeamSection/> */}
+            <TeamSection/>
             <ClientsSection/>
             <Footer/>
         </div>
