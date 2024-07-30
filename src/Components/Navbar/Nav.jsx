@@ -1,10 +1,12 @@
 import React from "react";
-import './Nav.css'
+import './Nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLocationDot, faPhone} from '@fortawesome/free-solid-svg-icons';
-import Logo from '../../Assets/Images/Logo.png'
-const Nav = ()=>{
-    return(
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import Logo from '../../Assets/Images/Logo.png';
+import { NavLink } from "react-router-dom";
+
+const Nav = () => {
+    return (
         <section>
             {/* <div className="TopNav">
                 <div className="container">
@@ -36,23 +38,72 @@ const Nav = ()=>{
                         </div>
                         <div className="col-lg-9 col-md-12 LinksNav">
                             <ul className="list-list-unstyled">
-                                <li className="list-inline-item ActiveLink">Home</li>
-                                <li className="list-inline-item">About us</li>
-                                <li className="list-inline-item">Services</li>
-                                <li className="list-inline-item">Solution</li>
-                                <li className="list-inline-item">News</li>
-                                <li className="list-inline-item">Clients</li>
-                                <li className="list-inline-item">Careers</li>
+                                <li className="list-inline-item">
+                                    <NavLink
+                                        className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        to="/home"
+                                    >
+                                        Home
+                                    </NavLink>
+                                </li>
+                                <li className="list-inline-item">
+                                    <NavLink
+                                        className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        to="/about"
+                                    >
+                                        About us
+                                    </NavLink>
+                                </li>
+                                <li className="list-inline-item">
+                                    <NavLink
+                                        className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        to="/services"
+                                    >
+                                        Services
+                                    </NavLink>
+                                </li>
+                                <li className="list-inline-item">
+                                    <NavLink
+                                        className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        to="/solution"
+                                    >
+                                        Solution
+                                    </NavLink>
+                                </li>
+                                <li className="list-inline-item">
+                                    <NavLink
+                                        className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        to="/news"
+                                    >
+                                        News
+                                    </NavLink>
+                                </li>
+                                <li className="list-inline-item">
+                                    <NavLink
+                                        className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        to="/clients"
+                                    >
+                                        Clients
+                                    </NavLink>
+                                </li>
+                                <li className="list-inline-item">
+                                    <NavLink
+                                        className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        to="/careers"
+                                    >
+                                        Careers
+                                    </NavLink>
+                                </li>
                                 <li className="list-inline-item">
                                     <button className="btn btn-danger NavContactBtn">Contact us</button>
                                 </li>
                             </ul>
                         </div>
-                         
                     </div>
                 </div>
             </div>
         </section>
     );
 }
+
 export default Nav;

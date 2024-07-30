@@ -1,6 +1,8 @@
 import React from "react";
 import './Footer.css'
 import Logo from '../../Assets/Images/Logo.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faLinkedinIn, faTiktok, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 const Footer = ()=>{
     return( 
         <section className="FooterSection">
@@ -58,8 +60,31 @@ const Footer = ()=>{
                     </div>
                        
                 </footer>
+                    <div className="row PrivacyRow">
+                        <div className="col-lg-9 PrivacyCol">©MIND for Information Technology & Media. All Rights Reserved.</div>
+                        <div className="col-lg-3 PrivacyCol">
+                            <div className="FooterSocial">
+                                <a className="FooterIcon" href="">
+                                <FontAwesomeIcon icon={faFacebookF} />
+                                </a>
+                                <a className="FooterIcon" href="">
+                                <FontAwesomeIcon icon={faXTwitter} />
+                                </a>
+                                <a className="FooterIcon" href="">
+                                <FontAwesomeIcon icon={faInstagram} />
+                                </a>
+                                <a className="FooterIcon" href="">
+                                <FontAwesomeIcon icon={faTiktok} />
+                                </a>
+                                <a className="FooterIcon" href="">
+                                <FontAwesomeIcon icon={faYoutube} />
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-
+                
         </section>
     );
 }

@@ -56,10 +56,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 50%;
-    border-top-right-radius:50%;
+    /* border-top-left-radius: 50%;
+    border-top-right-radius:50%; */
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    border-radius: 50px;
     min-height: 220px;
     max-width: 200px;
     min-width: 200px;
@@ -68,7 +69,7 @@
 .TeamCard .Circle{
     max-width: 140px;
     max-height: 140px;
-    border-radius: 50%;
+    border-radius: 50px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -98,7 +99,6 @@
 .ClientsSection{
     background-color: white;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 .ClientCardContainer{
     width: 150px;
@@ -125,4 +125,85 @@
 .ClientCardsSlider{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.WhyUsSection{
+    min-height: 600px;
+    background-image: url('../../Assets/Images/FooterImage.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.OverlayFooter{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-light-red);
+    background-color: #ff0008;
+    opacity: 0.80;
+}
+.WhyUsSection .CustomContainer{
+    position: relative;
+    z-index: 120 !important;
+}
+.WhyUsCol{
+    padding: 10px;
+    padding-top: 10%;
+    text-align: start;
+    color: white;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.WhyChooseSpan{
+    font-size: 80px;
+    font-weight: 700;
+    display: flex;
+    justify-content: start;
+    line-height: 96px;
+}
+.WhyChooseUsText{
+    font-size: 15px;
+    line-height: 23.51px;
+    position: relative;
+    top: 20px;
+    padding-right: 20px;
+
+}
+.BottomFooter{
+    position: relative;
+    padding-top: 500px;
+}
+.BottomFooter .WhyUsSection{
+    position: absolute;
+    top: 100px;
+    z-index: 8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.BottomFooter footer{
+    z-index: 10;
+    position: relative;
+}
+@media (max-width:1200px) {
+    .WhyChooseSpan{
+        font-size:60px;
+        line-height: normal;
+
+    }
+}
+
+@media (max-width:768px) {
+    .WhyChooseUsText{
+        padding-top: 0 !important;
+    
+    }
+    .WhyChooseSpan{
+        font-size:40px;
+        line-height: normal;
+
+    }
 }

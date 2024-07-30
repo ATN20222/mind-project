@@ -1,0 +1,138 @@
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.AboutFirstSection{
+    padding-top: 100px;
+    padding-bottom:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AboutSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+.MileStoneAboutSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color: #FAF4F4;
+    overflow: hidden;
+
+}
+.AboutPageImage{
+    max-width: 500px;
+}
+.AboutPageCol{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+.AboutPageHeader{
+    font-size: 32px;
+    font-weight: 700;
+}
+.AboutPageRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.UnderAboutHr{
+    background-image: linear-gradient(279.62deg, #ED1C24 4.5%, #E21B23 20.28%, #87101E 97.32%);
+    width: 40%;
+    height: 6px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.FirstAboutSpan{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom:10px;
+    padding-right: 50px;
+}
+.FirstAboutSectionBorder{
+    width: 70%;
+    background-color: #DFC8C8;
+    height: 1px;
+}
+.GoalSpan{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.YearItemToSelect span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #6A6A6A;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.SelectedYear span{
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    transition: all 0.1s linear;
+
+}
+.slide{
+    padding: 10px;
+    height: 250px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+.year-box{
+    border-radius: 100px;
+    background: linear-gradient(78.44deg, #ED1C24 -72.91%, #87101E 190.73%);
+    color: white;
+    width: 100% !important;
+    min-height: 200px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    filter: opacity(0.8);
+}
+.MileStoneCol{
+    padding: 20px !important;
+}
+.slick-current{
+    border-radius: 100px;
+    background: linear-gradient(78.44deg, #ED1C24 -72.91%, #87101E 190.73%);
+    color: white;
+    min-height: 250px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+}
+.slick-current>div{
+    width: 100%;
+}
+.slick-current .YearNumber h1{
+    font-size:60px;
+    font-weight: 800px !important;
+    margin-bottom: 0;
+}
+.TextYear{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.TeamCardAbout{
+    margin: 10px;
+}

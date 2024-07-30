@@ -56,12 +56,16 @@ import images from '../../../Test';
       items:4
     },
     ssmobile: {
-        breakpoint: { max: 470, min: 328 },
+        breakpoint: { max: 470, min: 350 },
         items:3
+      },
+      ssmobile: {
+        breakpoint: { max: 350, min: 328 },
+        items:2
       },
     xsmobile: {
       breakpoint: { max: 328, min: 0 },
-      items: 3
+      items: 2
     }
   };
 

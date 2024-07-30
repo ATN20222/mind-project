@@ -7,7 +7,7 @@ const AboutUsSection = ()=>{
             <div className="container CustomContainer">
                 <div className="row">
                 <div className="col-lg-6 col-md-6  SolutionSectionImageCol">
-                        <img src={AboutImage} width="80%" alt="" />
+                        <img src={AboutImage} width="100%" alt="" />
                     </div>
                     <div className="col-lg-6 col-md-6 SolutionSectionTextCol">
                         <h1 className="SolutionHeader">About Us</h1>

@@ -14,7 +14,7 @@ const SolutionSection = ()=>{
                     
                     </div>
                     <div className="col-lg-6  col-md-6  SolutionSectionImageCol">
-                        <img src={SolImage} width="80%" alt="" />
+                        <img src={SolImage} width="100%" alt="" />
                     </div>
 
                 </div>

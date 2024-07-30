@@ -1,7 +1,7 @@
 import React from "react";
-const TeamCard = ({Image , Name , Role})=>{
+const TeamCardAbout = ({Image , Name , Role})=>{
     return(
-        <div className="TeamCard col-lg-12">
+        <div className="TeamCard col-lg-2 col-md-2 col-sm-2 col-2    TeamCardAbout">
             <div className="IconContainer">
                 <div className="Circle">
                     <img src={Image} width="180%" alt="" />
@@ -14,4 +14,4 @@ const TeamCard = ({Image , Name , Role})=>{
         </div>
     );
 }
-export default TeamCard;
+export default TeamCardAbout;

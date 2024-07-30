@@ -1,5 +1,17 @@
 .FooterSection{
-    margin-bottom: 100px;   
+    /* margin-bottom: 100px;    */
+}
+.PrivacyRow{
+    padding: 20px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.PrivacyRow .PrivacyCol:nth-child(1){
+    text-align: start;
+    font-weight: 500;
+    font-size: 14px;
 }
 footer{
     background-color: #FEEFEF;
@@ -70,3 +82,17 @@ footer{
     font-size: 32px;
     font-weight: 700;
 }
+.FooterSocial{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FooterSocial .FooterIcon{
+    padding: 10px;
+    color: black;
+}
+.PrivacyCol:nth-child(1){
+    padding: 10px;
+}
+
