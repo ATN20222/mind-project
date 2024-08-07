@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './Components/Navbar/Nav';
 import About from './Pages/About/About';
+import Services from './Pages/Services/Services';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/' element={<Home />} />
           <Route path='about'element={<About/>} ></Route>
+          <Route path='services'element={<Services/>} ></Route>
         </Routes>
       </div>
     </Router>
