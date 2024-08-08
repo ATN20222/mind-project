@@ -65,9 +65,9 @@ const Nav = () => {
                                 <li className="list-inline-item">
                                     <NavLink
                                         className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
-                                        to="/solution"
+                                        to="/solutions"
                                     >
-                                        Solution
+                                        Solutions
                                     </NavLink>
                                 </li>
                                 <li className="list-inline-item">

@@ -1,5 +1,6 @@
 .ServicesFirstSection {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .ServicesHeadingContainer {
@@ -172,6 +173,8 @@
     border-top-right-radius: 100px;
     border-bottom-left-radius:  64px;
     border-bottom-right-radius:  64px;
+    overflow: hidden;
+
 }
 .SelectedSubServiceImageContainer{
     overflow: hidden;
@@ -189,29 +192,7 @@
     padding-left: 100px;
     padding-right: 70px;
 }
-@media (min-width:1024px) {
-    .SelectedSubServiceSection .container{
-        padding-right: 0;
-        padding-left: 0;
-        border-top-left-radius: 176px;
-        border-top-right-radius: 176px;
-        border-bottom-left-radius:  64px;
-        border-bottom-right-radius:  64px;
-    }
-    .SelectedSubServiceImageContainer{
-        overflow: hidden;
-        
-        border-top-left-radius: 176px;
-        border-top-right-radius: 176px;
-        border-bottom-left-radius:  64px;
-        border-bottom-right-radius:  64px;
-    }
-    .SelectedSubServiceTextCol{
-        padding-bottom: 00px !important;
-        padding-top: 00px !important;
-    }
-    
-}
+
 .SelectedSubServiceTextCol{
     padding-bottom: 50px !important;
     padding-top: 50px !important;
@@ -255,4 +236,67 @@
 }
 .SelectedSubServiceImageContainer img{
     filter: grayscale(100%) !important;
+}
+.AfterShowText{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.HeaderWorkSamples{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 24.46px;
+    font-weight: 700;
+    line-height: 30.09px;
+    text-align: center;
+
+}
+.WorkSampleImageCol{
+    transition: all 0.2s ease-in-out;
+}
+.WorkSampleImageCol:hover{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (min-width:1024px) {
+    .SelectedSubServiceSection .container{
+        padding-right: 0;
+        padding-left: 0;
+        border-top-left-radius: 176px;
+        border-top-right-radius: 176px;
+        border-bottom-left-radius:  64px;
+        border-bottom-right-radius:  64px;
+    }
+    .SelectedSubServiceImageContainer{
+        overflow: hidden;
+        
+        border-top-left-radius: 176px;
+        border-top-right-radius: 176px;
+        border-bottom-left-radius:  64px;
+        border-bottom-right-radius:  64px;
+    }
+    .SelectedSubServiceTextCol{
+        padding-bottom: 00px !important;
+        padding-top: 00px !important;
+    }
+    
+}
+
+@media (max-width:1260px) {
+    .SelectedServiceMainImageCol{
+        max-height: 500px;
+    }
+}
+@media (max-width:468px) {
+    .SelectedServiceMainImageCol{
+        max-height: 250px;
+    }
+    .SelectedSubServiceImageContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .SelectedSubServiceImageContainer img{
+        width: auto !important;
+    }
 }

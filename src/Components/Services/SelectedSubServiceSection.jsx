@@ -1,5 +1,6 @@
 import React from "react";
-const SelectedSubServiceSection = ({id , Header, MainImage , Description})=>{
+const SelectedSubServiceSection = ({id , Header, MainImage , description})=>{
+
     return(
         <section className="SelectedSubServiceSection">
             <div className="container">
@@ -11,7 +12,7 @@ const SelectedSubServiceSection = ({id , Header, MainImage , Description})=>{
                             </div>
                             <div className="SubServiceUnderline"></div>
                             <span className="SelectedSubServiceDescription">
-                                {Description}
+                                {description}
                             </span>
                         </div>
                     </div>
