@@ -52,6 +52,8 @@
 .SolutionCard{
     padding: 10px !important;
     border-radius: 50px !important;
+    max-width: 250px !important;
+    
 }
 .SolutionCardImage{
     background-color: white;
@@ -79,5 +81,113 @@
     }
     .SolutionsWord span{
         font-size: 50px;
+    }
+}
+
+
+.Solutions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SliderSolutionSections {
+    width: 100%;
+    padding: 20px;
+}
+
+.ServiceCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.Solutions .carousel .react-multiple-carousel__arrow {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.SolutionSection1Text{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+
+}
+.SolutionShow2{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.SolutionShow2Image{
+    max-width: 800px;
+}
+
+.SolutionShow2TextContainer{
+    padding-left: 15%;
+    padding-right: 50px;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.SolutionShow3{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.SolutionShow3Image{
+    border-radius: 28px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.SolutionShow3TextContainer{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@media (max-width: 768px) {
+    .SliderSolutionText span {
+        font-size: 14px;
+    }
+
+    .SolutionCard {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .SolutionCard {
+        max-width: 100%;
+    }
+}
+@media (max-width:990px) {
+    .SolutionShow2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .SolutionShow2Image{
+        border-radius: 30px;
+        overflow: hidden;
+
+        margin: 10px;
+    }
+    .SolutionShow2TextContainer{
+        margin-top: 50px;
+        padding: 0;
+        margin-left: 50px;
+        margin-right: 50px;
+
     }
 }
