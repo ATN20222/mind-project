@@ -95,7 +95,9 @@ const Nav = () => {
                                     </NavLink>
                                 </li>
                                 <li className="list-inline-item">
-                                    <button className="btn btn-danger NavContactBtn">Contact us</button>
+                                    <NavLink className="btn btn-danger NavContactBtn" to="/contactus">
+                                    Contact us
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>

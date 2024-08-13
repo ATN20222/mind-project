@@ -1,0 +1,165 @@
+.ContactUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.FirstContactSpan{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: left;
+}
+.ContactUsFormSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.SendMessageHeader{
+    margin-bottom: 50px;
+}
+.SendMessageHeader{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
+
+}
+
+.FormContainer{
+    background-color: #FEEFEF;
+    min-height: 600px;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.ContactInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ContactFormCol{
+
+}
+.ContactInput label{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column; 
+    padding-left: 10px;
+    width: 100%;
+
+    font-size: 13.72px;
+    font-weight: 500;
+    line-height: 16.47px;
+    text-align: left;
+
+
+}
+.ContactInput label span{
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.ContactInput input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 51.23px;
+    border-radius: 30.19px;
+    box-shadow: 0px 3.66px 15.74px 0px #FF7C7C40;
+    padding-left: 20px;
+}
+.ContactInput textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 51.23px;
+    border-radius: 30.19px;
+    box-shadow: 0px 3.66px 15.74px 0px #FF7C7C40;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+#Message{
+    min-height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+}
+.ContactLeftCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContactDataContainer{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.ContactDataItemHeader{
+    font-size: 18.3px;
+    font-weight: 500;
+    line-height: 21.96px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.ContactDataIconContainer{
+    
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #FEEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.ContactDataIconContainer svg{
+    width: 25px;
+    height:25px;
+    color: #D80808;
+
+}
+
+.ContactDataItemContent{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.ContactDataText{
+    font-size: 12.81px;
+    font-weight: 500;
+    line-height: 15.37px;
+    text-align: left;
+    margin-left: 10px;
+
+}
+.SubmitForm{
+    margin-top: 30px;
+}

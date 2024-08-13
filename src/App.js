@@ -9,6 +9,7 @@ import About from './Pages/About/About';
 import Services from './Pages/Services/Services';
 import Solutions from './Pages/Solutions/Solutions';
 import News from './Pages/News/News';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='services'element={<Services/>} ></Route>
           <Route path='solutions'element={<Solutions/>} ></Route>
           <Route path='news'element={<News/>} ></Route>
+          <Route path='contactus'element={<ContactUs/>} ></Route>
         </Routes>
       </div>
     </Router>
