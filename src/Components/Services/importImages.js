@@ -1,11 +1,4 @@
-import _2dDesign from './images/2dDesign.svg';
-import BothsMockups from './images/BothsMockups.svg';
-import Branding from './images/Branding.svg';
-import ConceptStore from './images/ConceptStore.svg';
-import Design from './images/Design.svg';
-import GiveAways from './images/GiveAways.svg';
-import InternalBranding from './images/InternalBranding.svg';
-import OutDoors from './images/OutDoors.svg';
-import Photography from './images/Photography.svg';
-import Printing___Publishing from './images/Printing & Publishing.svg';
-import printing from './images/printing.svg';
+import ihoneyherb from './images/ihoneyherb.jpeg';
+import KiddyCorner from './images/KiddyCorner.jpeg';
+import KiddyCorner2 from './images/KiddyCorner2.jpeg';
+import NewLocation from './images/NewLocation.jpeg';

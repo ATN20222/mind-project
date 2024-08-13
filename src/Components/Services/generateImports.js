@@ -3,7 +3,7 @@ const path = require('path');
 
 
 // Directory where your images are stored
-const imagesDir = path.join(__dirname, '../../Assets/Images/MarketingService');
+const imagesDir = path.join(__dirname, '../../Assets/Images/News');
 
 // Output file where import statements will be written
 const outputFile = path.join(__dirname, 'importImages.js');
