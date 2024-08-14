@@ -10,6 +10,8 @@ import Services from './Pages/Services/Services';
 import Solutions from './Pages/Solutions/Solutions';
 import News from './Pages/News/News';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import Clients from './Pages/Clients/Clients';
+import Careers from './Pages/Careers/Careers';
 
 
 function App() {
@@ -25,6 +27,11 @@ function App() {
           <Route path='solutions'element={<Solutions/>} ></Route>
           <Route path='news'element={<News/>} ></Route>
           <Route path='contactus'element={<ContactUs/>} ></Route>
+          <Route path='clients'element={<Clients/>} ></Route>
+          <Route path='careers'element={<Careers/>} ></Route>
+
+
+
         </Routes>
       </div>
     </Router>

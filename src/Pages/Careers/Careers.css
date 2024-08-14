@@ -1,0 +1,28 @@
+.Careers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.CareersFirstSection{
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.CareerFirstSectionSpan{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.JobsSection{
+    margin-bottom: 50px;
+}
+.JobsHeader{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

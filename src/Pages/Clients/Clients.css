@@ -1,0 +1,55 @@
+.Clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ClientsFirstSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.HeaderClients{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;    
+}
+
+.ClientsSliderAndGallery{
+    margin-top: 50px;
+}
+
+
+.SubServiceCard .ClientTitle{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14.24px;
+    text-align: center;
+    padding-right: 2px;
+    padding-left: 2px;
+    
+}
+.ClientsCategoryCard{
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ClientCard img{
+    scale: 1.5;
+}
+
+.SelectedSubService .ClientTitle{
+    color: white;
+}
+.CustomContainer{
+    margin-bottom: 50px;
+}
