@@ -285,7 +285,8 @@
     
 }
 .ServicesCard {
-    height: 400px;
+    height: 380px;
+    justify-content: space-between !important;
 }
 @media (max-width:1260px) {
     .SelectedServiceMainImageCol{

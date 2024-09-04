@@ -187,7 +187,7 @@ const CustomSlider = ()=>{
                         >
                             
                             {clients.map((client) => (
-                                <div className="SerciceCardContainer SerciceNewCardContainer" key={client.id}>
+                                <div className="SerciceCardContainer SerciceNewCardContainer " key={client.id}>
                                     <ClientsCategoryCard
                                         id={client.id}
                                         title={client.title}
@@ -203,7 +203,7 @@ const CustomSlider = ()=>{
                         <div className="row Center">
                             {selectedClient.images.map((image , index)=>(
                                 <div className="ClientCardContainer col-lg-2 col-md-2 col-sm-4 col-5">
-                                    <div className="ClientCard">
+                                    <div className="ClientCard ClientCategoryCardNew">
 
                                         <img key={index} src={image} width="100%" alt={`image-${index}`} />
                                     </div>

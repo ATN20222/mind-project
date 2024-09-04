@@ -43,8 +43,15 @@
     align-items: center;
 
 }
+.ClientCard{
+    overflow: hidden;
+}
 .ClientCard img{
     scale: 1;
+}
+.ClientCategoryCardNew img{
+    scale: 1.8;
+
 }
 
 .SelectedSubService .ClientTitle{
