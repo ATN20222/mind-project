@@ -46,6 +46,30 @@ import WorkSampleImage5 from '../../Assets/Images/MarketingService/WorkSampleIma
 import WorkSampleImage6 from '../../Assets/Images/MarketingService/WorkSampleImage6.jpg'
 import Gallery from "./Gallery";
 
+
+// media production images
+import MediaProductiondocumentary from '../../Assets/Images/Media Production/documentary.svg';
+import MediaProductionInfographic from '../../Assets/Images/Media Production/Infographic.svg';
+import MediaProductionPost from '../../Assets/Images/Media Production/Post.svg';
+import MediaProductionTV from '../../Assets/Images/Media Production/TV.svg';
+import MediaProductionMainDocumentry from '../../Assets/Images/Media Production/MainDocumentry.jfif';
+import MediaProductionMainInfoGrphic from '../../Assets/Images/Media Production/MainInfoGrphic.jfif';
+import MediaProductionMainPost from '../../Assets/Images/Media Production/MainPost.jfif';
+import MediaProductionMainTV from '../../Assets/Images/Media Production/MainTV.jfif';
+
+
+// online solutions images 
+import OnlineSolutionsMobile from '../../Assets/Images/Online Solutions/Mobile.svg';
+import OnlineSolutionsMobileMainImage from '../../Assets/Images/Online Solutions/MobileMainImage.png';
+import OnlineSolutionsSocial from '../../Assets/Images/Online Solutions/Social.svg';
+import OnlineSolutionsSocialMainImage from '../../Assets/Images/Online Solutions/SocialMainImage.png';
+import OnlineSolutionsWeb from '../../Assets/Images/Online Solutions/Web.svg';
+import OnlineSolutionsWebMainImage from '../../Assets/Images/Online Solutions/WebMainImage.png';
+
+
+// other services image 
+import DubbingMainImage from '../../Assets/Images/OtherServices/DubbingMainImage.jfif';
+
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
@@ -130,14 +154,10 @@ const CustomNextButton = ({ onClick, Class }) => (
 );
 
 const ServicesFirstSection = () => {
-    const [selectedService, setSelectedService] = useState(1);
-    const [selectedSubService, setSelectedSubService] = useState(null);
-    const [selectedSubServiceData, setSelectedSubServiceData] = useState(null);
-
     const Services = [
         { id: 1, icon: MediaProduction, Header: "Media Production" },
         { id: 2, icon: OnlineSolutions, Header: "Online Solutions" },
-        { id: 3, icon: Subtitling, Header: "Dubbing & Subtitling" },
+        // { id: 3, icon: Subtitling, Header: "Dubbing & Subtitling" },
         { id: 4, icon: DubbingSubtitling, Header: "Dubbing & Subtitling" },
         { id: 5, icon: PublicRelationsServices, Header: "Public Relations Services" },
         { id: 6, icon: MarketingServices, Header: "Marketing Services" }
@@ -163,7 +183,8 @@ const ServicesFirstSection = () => {
 
 
         },
-        {   id: 3, 
+        {   
+            id: 3, 
             title:"Branding",             
             description:"A brand is the idea or image of a specific product or service that consumers connect with? by identifying the name? logo? slogan? or design of the company who owns the idea or image.", 
             MainImage:MainBranding, 
@@ -171,14 +192,15 @@ const ServicesFirstSection = () => {
             serviceId: 6 ,
             Gallery:[]
         },
-        {   id: 4, 
+        {   
+            id: 4, 
             title:'Concept Stores',       
             description:"A concept store offers shoppers multiple types of items with one centralized theme. All the products in a concept store add to the theme of the establishment, even though they might be different categories altogether. For example, shoes, shirts and furniture in a beach concept store contribute to the theme.",
              MainImage:MainConceptStore, 
              image: ConceptStore, 
              serviceId: 6 ,
              Gallery:[]
-            },
+        },
         {   
             id: 5, 
             title:'Giveaways',            
@@ -187,7 +209,7 @@ const ServicesFirstSection = () => {
             image: GiveAways, 
             serviceId: 6,
             Gallery:[]
-         },
+        },
         {   
             id: 6, 
             title:"Internal Branding",    
@@ -196,8 +218,9 @@ const ServicesFirstSection = () => {
             image: InternalBranding, 
             serviceId: 6,
             Gallery:[]
-         },
-        {   id: 7,
+        },
+        {   
+            id: 7,
             title:"Outdoors & Signage",    
             description:"MIND encompasses the vast array of outdoor media available to marketers and advertisers, strategically planned and positioned to reach the right target audience in the right place at the right time, when they are outdoors. Small, large and interactive outdoor advertising formats offer high impact solutions to reach your audience demographicly.",
             MainImage:MainOutDoors, 
@@ -205,7 +228,8 @@ const ServicesFirstSection = () => {
             serviceId: 6 ,
             Gallery:[]
         },
-        {   id: 8, 
+        {   
+            id: 8, 
             title:"Photography",          
             description:"When we select our photographers we ensure they have the skills to be outstanding ambassadors for your organization.They know when to add value to an event and when to fade into the background. We select our photographers based not only on their technical skills and adherence to detail but also upon their ability to positively interact with your staff and clients.", 
             MainImage:MainPhotography, 
@@ -213,7 +237,8 @@ const ServicesFirstSection = () => {
             serviceId: 6 ,
             Gallery:[]
         },
-        {   id: 9,
+        {   
+            id: 9,
             title:"Printing & Publishing", 
             description:"We aim to deliver your ideas into reality as you experience the luxury of high quality printed materials and reliable staff with affordable prices.",
             MainImage:MainPrintingPublishing, 
@@ -235,13 +260,88 @@ const ServicesFirstSection = () => {
         {   
             id: 11, 
             title:"Info-graphic Videos",       
-            description:"Our team have been producing high quality commercial illustrations? motion graphics and character design and regularly work with some of the largest advertising agencies and brands in the world. We can manage every aspect of your project and view each job with equal importance? no matter how small. we think attention to detail and our ability to combine cutting edge ?3D illustration.", 
-            MainImage:MaindDesign, 
-            image: dDesign, 
-            serviceId: 6 ,
+            description:"Info-graphics are the smart new digital way of communicating ideas, data and knowledge – quickly and efficiently. They explain often complex information using graphics and highly distilled copy.", 
+            MainImage:MediaProductionMainInfoGrphic, 
+            image: MediaProductionInfographic, 
+            serviceId: 1 ,
+            Gallery:[]
+        },
+        {   
+            id: 12, 
+            title:"Documentary",       
+            description:"Our crew, and our huge network of the film making talents are ready to film and shoot any events, reality stories, news reports, and corporate documentaries. Our long experience in shooting huge projects all around the MENA region makes us one of the best Media companies that you can rely on.", 
+            MainImage:MediaProductionMainDocumentry , 
+            image: MediaProductiondocumentary, 
+            serviceId: 1 ,
+            Gallery:[]
+        },
+        {   
+            id: 13,
+            title:"TV & Radio Ads",       
+            description:"We are able to offer TV commercials and Digital promo videos that give our clients instant credibility at the lowest production cost.", 
+            MainImage:MediaProductionMainTV, 
+            image: MediaProductionTV, 
+            serviceId: 1 ,
+            Gallery:[]
+        },
+        {   
+            id: 14,
+            title:"Post Production",       
+            description:"Our experienced team, and latest equipment will enhance your productions with our services of: Editing ,Mixing and Color Correction", 
+            MainImage:MediaProductionMainPost, 
+            image: MediaProductionPost, 
+            serviceId: 1 ,
+            Gallery:[]
+        },
+        {   
+            id: 15,
+            title:"Website Development",       
+            description:"Exceptional web design keeps users engaged with appealing aesthetics and emotional interaction. Your website, more than a static brand, speaks universally. Our expert team understands web development's nuances, creating outstanding, user-friendly websites with simple communication. We combine the latest technologies with bespoke techniques to build resilient websites and bring your vision to life.",
+            MainImage:OnlineSolutionsWebMainImage, 
+            image: OnlineSolutionsWeb, 
+            serviceId: 2,
+            Gallery:[]
+        },
+        {   
+            id: 16,
+            title:"Mobile Applications",       
+            description:"We can create a wide range of mobile apps based on your requirements. Our experienced programmers have the acumen to come up with fresh ideas and provide out of the box solutions to suit your needs.",
+            MainImage:OnlineSolutionsMobileMainImage, 
+            image: OnlineSolutionsMobile, 
+            serviceId: 2,
+            Gallery:[]
+        },
+        {   
+            id: 17,
+            title:"Social Media Management",       
+            description:"We are capable of creating and managing your social media to add value to your business and customers base. Our team has a selection of the most creative, ambitious and hardworking staff and they all have the same goal to satisfy our clients. We work across all known platforms (Facebook, YouTube, Twitter, Instagram, LinkedIn,..etc)",
+            MainImage:OnlineSolutionsSocialMainImage, 
+            image: OnlineSolutionsSocial, 
+            serviceId: 2,
+            Gallery:[]
+        },
+        {   
+            id: 18,
+            title:"Dubbing & Subtitling",       
+            description:"We have the latest technology available for professional film dubbing for entertainment, educational & corporate industries. We can lip-synch your project into Arabic, Asian & European languages. Each project is done by native speakers who work together to capture both the language & culture of the country for which the program is being dubbed.",
+            MainImage:DubbingMainImage, 
+            image: DubbingMainImage, 
+            serviceId: 4,
+            Gallery:[]
+        },
+        {   
+            id: 19,
+            title:"Public Relations Services",       
+            description:"There are many roles that define Public Relations in Egypt, many think it is only a business to business communication plan, however, Public Relations is much more interrogated in our everyday lives and is one of the most important tools that we unknowingly use every single day.",
+            MainImage:DubbingMainImage, 
+            image: DubbingMainImage, 
+            serviceId: 5,
             Gallery:[]
         },
     ]
+    const [selectedService, setSelectedService] = useState(1);
+    const [selectedSubService, setSelectedSubService] = useState(11);
+    const [selectedSubServiceData, setSelectedSubServiceData] = useState(SubServices.filter(i=>i.id===11)[0]);
 
     const handleOnSelect = (id) => {
         setSelectedService(id);
@@ -271,6 +371,7 @@ const ServicesFirstSection = () => {
                     <div className="UnderLineServices"></div>
                     <span className="AfterLineText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
                 </div>
+                
                 <div className="container">
                     <div className="slider-container ServicesSlider">
                         <Carousel
@@ -297,34 +398,35 @@ const ServicesFirstSection = () => {
                     </div>
                 </div>
 
+                {SubServices.filter(s=>s.serviceId==selectedService).length>1&&
+                    <div className="container CustomContainer">
+                        <div className="slider-container ServicesSlider">
+                            <Carousel
+                                responsive={responsive2}
+                                infinite={false}
+                                autoPlay={false}
+                                autoPlaySpeed={2000}
+                                arrows={false}
+                                draggable={true}
+                                customLeftArrow={<CustomPrevButton Class="" />}
+                                customRightArrow={<CustomNextButton Class="" />}
+                            >
+                                {SubServices.filter(s=>s.serviceId==selectedService).map((service) => (
+                                    <div className="SerciceCardContainer SerciceNewCardContainer" key={service.id}>
+                                        <SubServiceCard
 
-                <div className="container CustomContainer">
-                    <div className="slider-container ServicesSlider">
-                        <Carousel
-                            responsive={responsive2}
-                            infinite={false}
-                            autoPlay={false}
-                            autoPlaySpeed={2000}
-                            arrows={false}
-                            draggable={true}
-                            customLeftArrow={<CustomPrevButton Class="" />}
-                            customRightArrow={<CustomNextButton Class="" />}
-                        >
-                            {SubServices.filter(s=>s.serviceId==selectedService).map((service) => (
-                                <div className="SerciceCardContainer SerciceNewCardContainer" key={service.id}>
-                                    <SubServiceCard
-
-                                        id={service.id}
-                                        image={service.image}
-                                        title={service.title}
-                                        IsSelected={selectedSubService === service.id}
-                                        onSelect={handleSelectSubService}
-                                    />
-                                </div>
-                            ))}
-                        </Carousel>
+                                            id={service.id}
+                                            image={service.image}
+                                            title={service.title}
+                                            IsSelected={selectedSubService === service.id}
+                                            onSelect={handleSelectSubService}
+                                        />
+                                    </div>
+                                ))}
+                            </Carousel>
+                        </div>
                     </div>
-                </div>
+                }
                 {console.log(selectedSubServiceData)}
                 {selectedSubServiceData&&
                     

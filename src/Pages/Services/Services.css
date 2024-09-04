@@ -129,11 +129,12 @@
     cursor: pointer;
 }
 .SubServiceCard .SubServiceTitle{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 14.24px;
     text-align: left;
     padding-right: 5px;
+
 
 }
 .SubServiceImage{
@@ -157,7 +158,9 @@
 .SelectedSubService .SubServiceTitle{
     color: white;
 }
-
+.HeaderServiceCard{
+    text-align: start;
+}
 
 
 .SelectedSubServiceSection{
@@ -227,12 +230,12 @@
 }
 .SelectedServiceMainImageCol{
     padding: 0;
-    max-height: 557px;
+    max-height: 450px;
 
 }
 .SelectedSubServiceImageContainer{
     height: 100%;
-    height: 575px;
+    height: 450px;
 }
 .SelectedSubServiceImageContainer img{
     filter: grayscale(100%) !important;
@@ -281,7 +284,9 @@
     }
     
 }
-
+.ServicesCard {
+    height: 400px;
+}
 @media (max-width:1260px) {
     .SelectedServiceMainImageCol{
         max-height: 500px;
@@ -298,5 +303,18 @@
     }
     .SelectedSubServiceImageContainer img{
         width: auto !important;
+    }
+}
+@media (max-width:350px) {
+    .SubServiceCard{
+        padding-left:50px ;
+    }
+    .SubServiceTitle{
+        font-size: 12px !important;
+
+    }
+    .SelectedSubServiceTextCol{
+        padding-left: 50px;
+        padding-right: 20px;
     }
 }

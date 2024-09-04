@@ -5,7 +5,7 @@ const ServicesCard = ({icon , Header, Description})=>{
         <div className="ServicesCard col-lg-12">
             <div className="IconContainer">
                 <div className="Circle">
-                    <img src={icon} alt="" />
+                    <img src={icon} width="40px" height="40px" alt="" />
                 </div>
             </div>
             <h3 className="HeaderServiceCard" >{Header}</h3>
