@@ -64,6 +64,7 @@
     padding-right: 20px;
     padding-left: 20px;
     box-shadow: 0px 4px 4px 0px #F800005C;
+    white-space: nowrap;
 
     
 }
@@ -71,4 +72,110 @@
     color: black;
     text-decoration: none;
     
+}
+.ScrolledNav {
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 99999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 1px 20px 5px;
+}
+
+.MainNav {
+    background-color: #fff;
+    /* padding: 10px 0;  */
+    position: relative;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.MainNav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: rgba(151, 30, 30, 0.2) 0px 7px 29px 0px;
+    animation: fadeInDown 0.5s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.OverlayMenu {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 200;
+    top: 77px;
+    box-shadow: rgba(151, 30, 30, 0.2) 0px 7px 29px 0px;
+}   
+
+.OverlayMenu.open {
+    width: 250px;
+}
+
+.OverlayLinks {
+    list-style: none;
+    padding: 0;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.OverlayLinks li {
+    margin: 20px 0;
+}
+
+.OverlayLinks a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.OverlayLinks a:hover {
+    color: #323232;
+}
+
+/* Close button */
+.CloseButton {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 30px;
+    color: #000;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.MenuButton {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+}
+.MenuButtonCol{
+    margin-right: 10px;
+}
+/* Show the menu button only on smaller screens */
+@media (max-width: 768px) {
+    .LinksNav {
+        display: none;
+    }
+
+    .MenuButton {
+        display: block;
+    }
 }

@@ -136,3 +136,6 @@
 .TeamCardAbout{
     margin: 10px;
 }
+.TeamName{
+    font-size: large !important;
+}

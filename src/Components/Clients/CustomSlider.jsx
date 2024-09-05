@@ -47,8 +47,75 @@ import GovernmentalClientsGroup_98 from '../../Assets/Images/GovernmentalClients
 import GovernmentalClientsGroup_99 from '../../Assets/Images/GovernmentalClients/Group 99.svg';
 
 
+
+
 import EducationalClient from '../../Assets/Images/EducationClients/Group 61.svg';
 import ClientsCategoryCard from "./ClientsCategoryCard";
+
+
+
+import HealthandmedicalClientsGroup_109 from '../../Assets/Images/HealthandmedicalClients/Group 109.svg';
+import HealthandmedicalClientsGroup_110 from '../../Assets/Images/HealthandmedicalClients/Group 110.svg';
+import HealthandmedicalClientsGroup_111 from '../../Assets/Images/HealthandmedicalClients/Group 111.svg';
+import HealthandmedicalClientsGroup_112 from '../../Assets/Images/HealthandmedicalClients/Group 112.svg';
+import HealthandmedicalClientsGroup_113 from '../../Assets/Images/HealthandmedicalClients/Group 113.svg';
+import HealthandmedicalClientsGroup_114 from '../../Assets/Images/HealthandmedicalClients/Group 114.svg';
+
+
+import MediaClientsGroup_123 from '../../Assets/Images/MediaClients/Group 123.svg';
+import MediaClientsGroup_124 from '../../Assets/Images/MediaClients/Group 124.svg';
+import MediaClientsGroup_125 from '../../Assets/Images/MediaClients/Group 125.svg';
+import MediaClientsGroup_126 from '../../Assets/Images/MediaClients/Group 126.svg';
+import MediaClientsGroup_127 from '../../Assets/Images/MediaClients/Group 127.svg';
+import MediaClientsGroup_128 from '../../Assets/Images/MediaClients/Group 128.svg';
+import MediaClientsGroup_129 from '../../Assets/Images/MediaClients/Group 129.svg';
+import MediaClientsGroup_130 from '../../Assets/Images/MediaClients/Group 130.svg';
+import MediaClientsGroup_131 from '../../Assets/Images/MediaClients/Group 131.svg';
+
+
+
+import IndustrialClientsGroup_116 from '../../Assets/Images/IndustrialClients/Group 116.svg';
+import IndustrialClientsGroup_117 from '../../Assets/Images/IndustrialClients/Group 117.svg';
+import IndustrialClientsGroup_118 from '../../Assets/Images/IndustrialClients/Group 118.svg';
+import IndustrialClientsGroup_119 from '../../Assets/Images/IndustrialClients/Group 119.svg';
+import IndustrialClientsGroup_120 from '../../Assets/Images/IndustrialClients/Group 120.svg';
+import IndustrialClientsGroup_121 from '../../Assets/Images/IndustrialClients/Group 121.svg';
+
+
+import ITClientsGroup_60 from '../../Assets/Images/ITClients/Group 60.svg';
+import ITClientsGroup_62 from '../../Assets/Images/ITClients/Group 62.svg';
+import ITClientsGroup_83 from '../../Assets/Images/ITClients/Group 83.svg';
+
+
+import MallsClientsGroup_102 from '../../Assets/Images/MallsClients/Group 102.svg';
+import MallsClientsGroup_122 from '../../Assets/Images/MallsClients/Group 122.svg';
+import MallsClientsGroup_69 from '../../Assets/Images/MallsClients/Group 69.svg';
+import MallsClientsGroup_70 from '../../Assets/Images/MallsClients/Group 70.svg';
+import MallsClientsGroup_78 from '../../Assets/Images/MallsClients/Group 78.svg';
+
+
+import TourismGroup_150 from '../../Assets/Images/Tourism/Group 150.svg';
+import TourismGroup_151 from '../../Assets/Images/Tourism/Group 151.svg';
+
+import RealStateClientsGroup_389 from '../../Assets/Images/RealStateClients/Group 389.svg';
+import RealStateClientsGroup_390 from '../../Assets/Images/RealStateClients/Group 390.svg';
+import RealStateClientsGroup_391 from '../../Assets/Images/RealStateClients/Group 391.svg';
+import RealStateClientsGroup_392 from '../../Assets/Images/RealStateClients/Group 392.svg';
+import RealStateClientsGroup_393 from '../../Assets/Images/RealStateClients/Group 393.svg';
+import RealStateClientsGroup_394 from '../../Assets/Images/RealStateClients/Group 394.svg';
+import RealStateClientsGroup_395 from '../../Assets/Images/RealStateClients/Group 395.svg';
+import RealStateClientsGroup_396 from '../../Assets/Images/RealStateClients/Group 396.svg';
+import RealStateClientsGroup_397 from '../../Assets/Images/RealStateClients/Group 397.svg';
+import RealStateClientsGroup_398 from '../../Assets/Images/RealStateClients/Group 398.svg';
+
+
+import SportsClientsGroup_143 from '../../Assets/Images/SportsClients/Group 143.svg';
+import SportsClientsGroup_144 from '../../Assets/Images/SportsClients/Group 144.svg';
+import SportsClientsGroup_145 from '../../Assets/Images/SportsClients/Group 145.svg';
+import SportsClientsGroup_146 from '../../Assets/Images/SportsClients/Group 146.svg';
+import SportsClientsGroup_147 from '../../Assets/Images/SportsClients/Group 147.svg';
+
+
 import images from "../../Test";
 
 const CustomPrevButton = ({ onClick, Class }) => (
@@ -160,9 +227,105 @@ const CustomSlider = ()=>{
                 GovernmentalClientsGroup_98,
                 GovernmentalClientsGroup_99
             ]
-        }
+        },
+        {
+            id:5,
+            title:'Health & Medical Care',
+            images:[
+                HealthandmedicalClientsGroup_109,
+                HealthandmedicalClientsGroup_110,
+                HealthandmedicalClientsGroup_111,
+                HealthandmedicalClientsGroup_112,
+                HealthandmedicalClientsGroup_113,
+                HealthandmedicalClientsGroup_114            
+            ]
+        },
+        {
+            id:6,
+            title:'Media & Entertainment',
+            images:[
+                MediaClientsGroup_123,
+                MediaClientsGroup_124,
+                MediaClientsGroup_125,
+                MediaClientsGroup_126,
+                MediaClientsGroup_127,
+                MediaClientsGroup_128,
+                MediaClientsGroup_129,
+                MediaClientsGroup_130,
+                MediaClientsGroup_131         
+            ]
+        },
+
+
+        {
+            id:7,
+            title:'Industrial & Commercial',
+            images:[
+                IndustrialClientsGroup_116,
+                IndustrialClientsGroup_117,
+                IndustrialClientsGroup_118,
+                IndustrialClientsGroup_119,
+                IndustrialClientsGroup_120,
+                IndustrialClientsGroup_121,
+            ]
+        },
         
-            
+        {
+            id:8,
+            title:'IT & Telecommunication',
+            images:[
+                ITClientsGroup_60,
+                ITClientsGroup_62,
+                ITClientsGroup_83,
+            ]
+        },
+        {
+            id:9,
+            title:'Malls & Shops',
+            images:[
+                MallsClientsGroup_102,
+                MallsClientsGroup_122,
+                MallsClientsGroup_69 ,
+                MallsClientsGroup_70 ,
+                MallsClientsGroup_78 ,
+            ]
+        },
+        {
+            id:10,
+            title:'Tourism',
+            images:[
+                TourismGroup_150,
+                TourismGroup_151,
+            ]
+        },
+        {
+            id:11,
+            title:'Real-estate',
+            images:[
+                RealStateClientsGroup_389,
+                RealStateClientsGroup_390,
+                RealStateClientsGroup_391,
+                RealStateClientsGroup_392,
+                RealStateClientsGroup_393,
+                RealStateClientsGroup_394,
+                RealStateClientsGroup_395,
+                RealStateClientsGroup_396,
+                RealStateClientsGroup_397,
+                RealStateClientsGroup_398,
+            ]
+        },
+           
+        {
+            id:12,
+            title:'Sports',
+            images:[
+                SportsClientsGroup_143,
+                SportsClientsGroup_144,
+                SportsClientsGroup_145,
+                SportsClientsGroup_146,
+                SportsClientsGroup_147,
+            ]
+        },
         
     ]
     const [selectedClient , setSelectedClient] = useState(clients[0]);

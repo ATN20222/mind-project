@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faLocationDot, faPhone, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../Assets/Images/Logo.png';
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
+    const [isSticky, setIsSticky] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+        useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setIsSticky(true);
+            } else {
+                
+                setIsSticky(false);
+            }
+            setIsMenuOpen(false);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <section>
             {/* <div className="TopNav">
@@ -28,10 +51,10 @@ const Nav = () => {
                     </div>
                 </div>
             </div> */}
-            <div className="MainNav">
+            <div className={`MainNav ${isSticky ? 'sticky' : ''}`}>
                 <div className="container">
                     <div className="row NavRow">
-                        <div className="col-lg-2 col-md-2">
+                        <div className="col-lg-2 col-md-2 col-2">
                             <div className="LogoContainer">
                                 <img src={Logo} width="131px" alt="" />
                             </div>
@@ -101,8 +124,46 @@ const Nav = () => {
                                 </li>
                             </ul>
                         </div>
+                        <div className="MenuButtonCol col-md-1 col-1 d-md-none Center">
+                            <button className="MenuButton" onClick={toggleMenu}>
+                                <FontAwesomeIcon icon={faBars} />
+                            </button>
+                        </div>
+
                     </div>
                 </div>
+            </div>
+
+            <div className={`OverlayMenu ${isMenuOpen ? 'open' : ''}`}>
+                <button className="CloseButton" onClick={toggleMenu}>
+                    <FontAwesomeIcon icon={faTimes} />
+                </button>
+                <ul className="OverlayLinks">
+                    <li>
+                        <NavLink to="/home" onClick={toggleMenu}>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about" onClick={toggleMenu}>About Us</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/services" onClick={toggleMenu}>Services</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/solutions" onClick={toggleMenu}>Solutions</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/news" onClick={toggleMenu}>News</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/clients" onClick={toggleMenu}>Clients</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/careers" onClick={toggleMenu}>Careers</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contactus" onClick={toggleMenu}>Contact Us</NavLink>
+                    </li>
+                </ul>
             </div>
         </section>
     );

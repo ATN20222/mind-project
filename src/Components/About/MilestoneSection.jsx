@@ -11,20 +11,18 @@ const MilestoneSection = () => {
 
     const Years = [
         { id: 0, year: 2010, yearInSlider: `10`, text: "All started here" },
-        { id: 1, year: 2011, yearInSlider: `11`, text: "All started here" },
-        { id: 2, year: 2012, yearInSlider: `12`, text: "All started here" },
-        { id: 3, year: 2013, yearInSlider: `13`, text: "All started here" },
-        { id: 4, year: 2014, yearInSlider: `14`, text: "All started here" },
-        { id: 5, year: 2015, yearInSlider: `15`, text: "All started here" },
-        { id: 6, year: 2016, yearInSlider: `16`, text: "All started here" },
-        { id: 7, year: 2017, yearInSlider: `17`, text: "All started here" },
-        { id: 8, year: 2018, yearInSlider: `18`, text: "All started here" },
-        { id: 9, year: 2019, yearInSlider: `19`, text: "All started here" },
-        { id: 10, year: 2020, yearInSlider: `20`, text: "All started here" },
-        { id: 11, year: 2021, yearInSlider: `21`, text: "All started here" },
-        { id: 12, year: 2022, yearInSlider: `22`, text: "All started here" },
-        { id: 13, year: 2023, yearInSlider: `23`, text: "All started here" },
-        { id: 14, year: 2024, yearInSlider: `24`, text: "New start" },
+        { id: 1, year: 2011, yearInSlider: `11`, text: "Establishing MIND for Media Innovations & Development" },
+        { id: 2, year: 2012, yearInSlider: `12`, text: "TahrirFM /TahrirTV" },
+        { id: 3, year: 2013, yearInSlider: `13`, text: "The voice of VIS (Vodafone)" },
+        { id: 4, year: 2014, yearInSlider: `14`, text: "MIND Radio" },
+        { id: 5, year: 2015, yearInSlider: `15`, text: "Reconstructing the company to MIND for Information Technology and Media" },
+        { id: 6, year: 2016, yearInSlider: `16`, text: "Launching MIND TV" },
+        { id: 7, year: 2017, yearInSlider: `17`, text: "Launching MIND Stores (www.mind-stores.com)" },
+        { id: 8, year: 2018, yearInSlider: `18`, text: "Launching Sports-mate" },
+        { id: 9, year: 2019, yearInSlider: `19`, text: "Launching All Classes Application" },
+        { id: 10, year: 2020, yearInSlider: `20`, text: "Launching Africa Stores (www.africa-stores.com)" },
+        { id: 11, year: 2023, yearInSlider: `23`, text: "Launching Spacio World (www.Spacioworld.com)" },
+        { id: 12, year: 2024, yearInSlider: `24`, text: "Our new office in Nasr City" },
     ];
 
     const settings = {
@@ -111,7 +109,7 @@ const MilestoneSection = () => {
                         </div>
                         <div className="TextYear">
                             <h3>
-                                {Years.find(i => i.id === selectedYear).text}
+                                {Years.find(i => i.id === selectedYear)?.text}
                             </h3>
                         </div>
                     </div>

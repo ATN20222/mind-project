@@ -5,15 +5,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Person from '../../../Assets/Images/Person.jpg';
 import TeamCard from '../../Home/TeamCard';
+import TeamImagesAbdullahMamdouh from '../../../Assets/Images/TeamImages/AbdullahMamdouh.jpg';
+import TeamImagesAhmedSabry from '../../../Assets/Images/TeamImages/AhmedSabry.jpg';
+import TeamImagesAntonAbdalla from '../../../Assets/Images/TeamImages/AntonAbdalla.jpg';
+import TeamImagesKhaledMoussa from '../../../Assets/Images/TeamImages/KhaledMoussa.jpg';
+import TeamImagesZiad from '../../../Assets/Images/TeamImages/Ziad.jpg';
 
-  const Team = [
-    {id:1,Image:Person , Name:"Anton Abdalla", Role:"Web Developer"},
-    {id:3,Image:Person , Name:"Ahmed Sabry", Role:"Flutter Developer"},
-    {id:4,Image:Person , Name:"Khaled Moussa", Role:"Web Developer"},
-    {id:1,Image:Person , Name:"Anton Abdalla", Role:"Web Developer"},
-    {id:3,Image:Person , Name:"Ahmed Sabry", Role:"Flutter Developer"},
-    {id:4,Image:Person , Name:"Khaled Moussa", Role:"Web Developer"},
-  ]
+const Team = [
+  {id:1,Image:TeamImagesAntonAbdalla , Name:"Anton Abdalla", Role:"Web Developer"},
+  {id:3,Image:TeamImagesAhmedSabry , Name:"Ahmed Sabry", Role:"Flutter Developer"},
+  {id:4,Image:TeamImagesKhaledMoussa , Name:"Khaled Moussa", Role:"Web Developer"},
+  {id:1,Image:TeamImagesZiad , Name:"Ziad Hafez", Role:"Web Developer"},
+  {id:3,Image:TeamImagesAbdullahMamdouh , Name:"Abdullah Mamdouh", Role:"Flutter Developer"},
+]
 
 const responsive = {
     superLargeDesktop: {

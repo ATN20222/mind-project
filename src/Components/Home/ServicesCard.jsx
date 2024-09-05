@@ -1,5 +1,6 @@
 import React from "react";
 import './ServicesSection.css'
+import { Link } from "react-router-dom";
 const ServicesCard = ({icon , Header, Description})=>{
     return(
         <div className="ServicesCard col-lg-12">
@@ -13,7 +14,7 @@ const ServicesCard = ({icon , Header, Description})=>{
             <span className="ServiceDescription">{Description}</span>
             <div className="ReadMoreServiceContainer">
 
-                <button className="btn btn-danger NavContactBtn ServiceCardShowMore">Read more</button>
+                <Link to='/services' className="btn btn-danger NavContactBtn ServiceCardShowMore">Read more</Link>
             </div>
 
         </div>

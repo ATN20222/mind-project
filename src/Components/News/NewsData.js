@@ -7,23 +7,23 @@ const NewsData = [
       {
         id: 1,
         title: "Our latest Marketing & Social Media Solutions for Kiddy Corner",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aspernatur modi, explicabo eius alias, iste exercitationem atque ipsam soluta dolore at est ducimus facilis labore repellendus necessitatibus vel rem culpa.",
+        description: "We proudly present our latest client “kiddy corner” to work on *their* marketing strategy and social media management .",
         image:Marketing,
-        tags:["#tag","#tag","#tag"]
+        tags:["#MIND","#kiddycorner","#marketing" , "#socialmedia"]
       },
       {
         id: 2,
         title: "Coverage Of Kiddy Corner’s Graduation Party",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aspernatur modi, explicabo eius alias, iste exercitationem atque ipsam soluta dolore at est ducimus facilis labore repellendus necessitatibus vel rem culpa.",
+        description: "MIND Team have successfully and proudly finished the coverage of kiddy Corner’s graduation party",
         image:KiddyCorner2,
-        tags:["#tag","#tag","#tag"]
+        tags:["#MIND","#kiddycorner","#event","#coverage"]
       },
       {
         id: 3,
         title: "Our Latest E-Commerce Solution",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aspernatur modi, explicabo eius alias, iste exercitationem atque ipsam soluta dolore at est ducimus facilis labore repellendus necessitatibus vel rem culpa.",
+        description: `MIND team have successfully delivered the E-Commerce solutions ( Website & Mobile App) for ” IHONEYHERB ” in UAE `,
         image:ihoneyherb,
-        tags:["#tag","#tag","#tag"]
+        tags:["#Gulf_Region ","#IHONEYHERB" , "#MINND_Holding"]
       },
     
 ]
