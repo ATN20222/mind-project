@@ -7,6 +7,7 @@ import TeamImagesAhmedSabry from '../../Assets/Images/TeamImages/AhmedSabry.jpg'
 import TeamImagesAntonAbdalla from '../../Assets/Images/TeamImages/AntonAbdalla.jpg';
 import TeamImagesKhaledMoussa from '../../Assets/Images/TeamImages/KhaledMoussa.jpg';
 import TeamImagesZiad from '../../Assets/Images/TeamImages/Ziad.jpg';
+import TeamImagesMohammed from '../../Assets/Images/TeamImages/Mohammed kian.png';
 
 const AboutTeamCardsSection = ()=>{
     const Team = [
@@ -15,6 +16,8 @@ const AboutTeamCardsSection = ()=>{
         {id:4,Image:TeamImagesKhaledMoussa , Name:"Khaled Moussa", Role:"Web Developer"},
         {id:1,Image:TeamImagesZiad , Name:"Ziad Hafez", Role:"Web Developer"},
         {id:3,Image:TeamImagesAbdullahMamdouh , Name:"Abdullah Mamdouh", Role:"Flutter Developer"},
+        {id:3,Image:TeamImagesMohammed , Name:"Mohammed Samy", Role:"Graphic Designer"},
+
       ]
     return(
         <section className="">

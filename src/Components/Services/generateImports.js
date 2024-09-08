@@ -3,7 +3,7 @@ const path = require('path');
 
 
 // Directory where your images are stored
-const imagesDir = path.join(__dirname, '../../Assets/Images/TeamImages');
+const imagesDir = path.join(__dirname, '../../Assets/Images/Gallery/Mobile/');
 
 // Output file where import statements will be written
 const outputFile = path.join(__dirname, 'importImages.js');
@@ -25,8 +25,9 @@ fs.readdir(imagesDir, (err, files) => {
     // Generate import statements
     const importStatements = imageFiles.map(file => {
         const variableName = toValidVariableName(path.basename(file, path.extname(file)));
-        const importPath = `../../Assets/Images/TeamImages/${file}`;
-        return `import ${'TeamImages'+variableName} from '${importPath}';`;
+        const importPath = `../../Assets/Images/Gallery/Mobile/${file}`;
+        // return `import ${'Mobile'+variableName} from '${importPath}';`;
+        return ` ${'Mobile'+variableName},`;
     }).join('\n');
 
     // Write import statements to the output file
